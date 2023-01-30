@@ -1,3 +1,6 @@
+import Post from '../Post/Post';
+
+
 const PostList = (props) => {
     return ( 
         <table>
@@ -8,11 +11,8 @@ const PostList = (props) => {
         <tbody>
             {props.parentEntries.map((entry) => {
               return (
-                <tr>
-                  <td></td>
-                  <td><strong>{entry.name}</strong></td>
-                  <td>{entry.post}</td>
-                </tr>
+                <Post entry={entry}/>
+                 
                 );
             })}
         </tbody>
