@@ -9,7 +9,7 @@ function App() {
   const [entries, setEntries] = useState([{name: 'Jude Washock', post: 'hello everyone!'}])
 
   function addNewEntry(entry){
-    let tempEntries = [...entries, entry];
+    let tempEntries = [entry, ...entries];
 
     setEntries(tempEntries);
   }
@@ -17,6 +17,7 @@ function App() {
 
   return (
     <div>
+      <CreatePostForm addNewEntryProperty={addNewEntry}/>
       <PostList parentEntries={entries} />
     </div>
   );

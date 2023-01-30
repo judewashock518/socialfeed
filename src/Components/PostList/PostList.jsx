@@ -3,7 +3,7 @@ const PostList = (props) => {
         <table>
         <thead>
           <tr>
-            <th>Post Number</th>
+            <th>Most Recent</th>
             <th>Name</th>
             <th>Post</th>
           </tr>
