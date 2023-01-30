@@ -1,14 +1,13 @@
 import React from 'react';
-import {Link} from 'react-router-dom';
+import './NavBar.css';
+
 
 
 const NavBar = () => (
-  <nav>
-    <ul>
-      <li><Link to="/">Home</Link></li>
-      <li><Link to="/about">About</Link></li>
-      <li><Link to="/contact">Contact</Link></li>
-    </ul>
+  <nav className = 'nav_flex_box'>
+      <li className='nav_items'>Home</li>
+      <li className='nav_items'>Account</li>
+      <li className='nav_items'>Contact</li>
   </nav>
 );
 

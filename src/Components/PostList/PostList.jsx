@@ -3,21 +3,17 @@ import Post from '../Post/Post';
 
 const PostList = (props) => {
     return ( 
-        <table>
-        <thead>
-          <tr>
-          </tr>
-        </thead>
-        <tbody>
-            {props.parentEntries.map((entry) => {
-              return (
-                <Post entry={entry}/>
-                 
-                );
-            })}
-        </tbody>
-      </table>
+      <ul>
+        {props.parentEntries.map((entry) => <Post entry={entry}/>)}
+      </ul>
+
     );
 }
     
 export default PostList;
+
+// return(
+//   <ul>
+//     {props.array.map( el => <Post entry = {el}/> )}
+//   </ul>
+// )

@@ -1,2 +1,25 @@
+.container_fluid {
+    display:grid;
+}
+
+.post_flex_box {
+    margin-right: 1rem;
+    margin-top: 1rem;
+}
+
+.label_flex {
+    margin-right: 1rem;
+}
+
+.input_box {
+    margin-right: 1rem;
+}
+
+.text_box {
+    box-sizing: border-box;
+    width: 100%;
+    padding: 5px;
+    
+}
 
 
