@@ -3,17 +3,14 @@ const PostList = (props) => {
         <table>
         <thead>
           <tr>
-            <th>Most Recent</th>
-            <th>Name</th>
-            <th>Post</th>
           </tr>
         </thead>
         <tbody>
-            {props.parentEntries.map((entry, index) => {
+            {props.parentEntries.map((entry) => {
               return (
                 <tr>
-                  <td>{index + 1}</td>
-                  <td>{entry.name}</td>
+                  <td></td>
+                  <td><strong>{entry.name}</strong></td>
                   <td>{entry.post}</td>
                 </tr>
                 );
