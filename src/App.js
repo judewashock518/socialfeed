@@ -20,8 +20,6 @@ function App() {
     <div className='container-fluid'>
       <div className='row'>
         <NavBar />
-          <h3 style={{margin: '1rem'}}>Social 
-          <small className='text-muted'>feed</small></h3>
         <div className='col-md-6'>
           <div className='border-box'>
             <CreatePostForm addNewEntryProperty={addNewEntry}/>
